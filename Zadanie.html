@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> Gra w kółko i krzyżyk </title>
+		<style>
+			.Square {
+				width:80px;
+				height:80px;
+				text-align: center;
+				font-size: 40pt;
+				font-weight: bold;
+				font-family: Verdana;
+			}
+		</style>
+		<script type="text/javascript" src="skrypt.js"></script>
+	</head>
+	<body onload="startGame();">
+	<center>
+		<h1>Gra w kółko i krzyżyk</h1>
+		<div id="message">wiadomosc</div>
+			<table border ="1">
+				<tr>
+					<td id ="s1" class="Square" onclick="nextMove(this);"> </td>
+					<td id ="s2" class="Square" onclick="nextMove(this);"> </td>
+					<td id ="s3" class="Square" onclick="nextMove(this);"> </td>
+				</tr>
+				<tr>
+					<td id ="s4" class="Square" onclick="nextMove(this);"> </td>
+					<td id ="s5" class="Square" onclick="nextMove(this);"> </td>
+					<td id ="s6" class="Square" onclick="nextMove(this);"> </td>
+				</tr>
+				<tr>
+					<td id ="s7" class="Square" onclick="nextMove(this);"> </td>
+					<td id ="s8" class="Square" onclick="nextMove(this);"> </td>
+					<td id ="s9" class="Square" onclick="nextMove(this);"> </td>
+				</tr>
+			</table>
+			<a href = "javascript:startGame();"> Zacznij jeszcze raz </a>
+	</center>
+	</body>
+</html>
